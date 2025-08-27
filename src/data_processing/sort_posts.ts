@@ -1,4 +1,4 @@
-import { Post } from "../dataHandling/types";
+import { Post } from "../data_handler/data_type";
 
 export function sortPosts(data: Post[], type: "newest" | "oldest"): Post[] {
   const sorted = [...data];

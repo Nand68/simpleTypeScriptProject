@@ -1,4 +1,4 @@
-import { Post } from "./types";
+import { Post } from "./data_type";
 
 export async function fetchPosts(): Promise<Post[]> {
   try {

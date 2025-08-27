@@ -7,11 +7,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { fetchPosts } from "./dataHandling/fetchPosts.js";
-import { renderPosts } from "./features/renderPosts.js";
-import { filterPostsByButton } from "./features/filterPosts.js";
-import { filterPostsByKeyword } from "./features/searchPosts.js";
-import { sortPosts } from "./features/sortPosts.js";
+import { fetchPosts } from "./data_handler/fetch_posts.js";
+import { renderPosts } from "./render_data/render_posts.js";
+import { filterPostsByButton } from "./data_processing/filter_posts.js";
+import { filterPostsByKeyword } from "./data_processing/search_posts.js";
+import { sortPosts } from "./data_processing/sort_posts.js";
 const searchInput = document.querySelector(".search-box input");
 const searchButton = document.querySelector(".search-box button");
 const filterButtons = document.querySelectorAll(".filter-buttons button");

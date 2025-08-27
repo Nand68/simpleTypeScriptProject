@@ -1,4 +1,4 @@
-import { Post } from "../dataHandling/types";
+import { Post } from "../data_handler/data_type";
 
 const container = document.getElementById("data-grid") as HTMLDivElement;
 
