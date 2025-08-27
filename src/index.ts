@@ -1,6 +1,7 @@
 import { fetchPosts } from "./dataHandling/fetchPosts";
 import { renderPosts } from "./features/renderPosts";
-import { filterPostsByKeyword, filterPostsByButton } from "./features/filterPosts";
+import { filterPostsByButton } from "./features/filterPosts";
+import {filterPostsByKeyword } from "./features/searchPosts"
 import { sortPosts } from "./features/sortPosts";
 import { Post } from "./dataHandling/types";
 
@@ -27,7 +28,7 @@ searchButton.addEventListener("click", () => {
 
 filterButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    const keyword = btn.textContent ?? "";
+    const keyword = btn.textContent;
     const filtered = filterPostsByButton(allData, keyword);
     renderPosts(filtered);
   });

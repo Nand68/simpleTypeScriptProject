@@ -9,7 +9,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import { fetchPosts } from "./dataHandling/fetchPosts.js";
 import { renderPosts } from "./features/renderPosts.js";
-import { filterPostsByKeyword, filterPostsByButton } from "./features/filterPosts.js";
+import { filterPostsByButton } from "./features/filterPosts.js";
+import { filterPostsByKeyword } from "./features/searchPosts.js";
 import { sortPosts } from "./features/sortPosts.js";
 const searchInput = document.querySelector(".search-box input");
 const searchButton = document.querySelector(".search-box button");
@@ -29,8 +30,7 @@ searchButton.addEventListener("click", () => {
 });
 filterButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-        var _a;
-        const keyword = (_a = btn.textContent) !== null && _a !== void 0 ? _a : "";
+        const keyword = btn.textContent;
         const filtered = filterPostsByButton(allData, keyword);
         renderPosts(filtered);
     });
