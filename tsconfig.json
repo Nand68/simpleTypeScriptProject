@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",                   // JS version to output
+    "module": "esnext",                // Keep ES modules
+    "moduleResolution": "node",
+    "outDir": "./dist",                // Output folder
+    "rootDir": "./src",                // Source folder
+    "strict": true,                    // Strict TS checking
+    "esModuleInterop": true,           // Support for import/export
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"]
+}

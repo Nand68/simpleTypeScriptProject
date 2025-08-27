@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter & Sort Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">My Posts</h1>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button>Search</button>
+      </div>
+    </nav>
+    <div id="common">
+      <section class="filters">
+        <h2>Filter by Keywords:</h2>
+        <div class="filter-buttons">
+          <button>est</button>
+          <button>autem</button>
+          <button>est</button>
+          <button>quia</button>
+        </div>
+      </section>
+
+      <section class="sort">
+        <h2>Sort by:</h2>
+        <select>
+          <option value="oldest">Oldest</option>
+          <option value="newest">Newest</option>
+        </select>
+      </section>
+    </div>
+
+    <section class="data-container">
+      <h2>Posts</h2>
+      <div class="data-grid" id="data-grid">
+        <div class="card">Loading...</div>
+      </div>
+    </section>
+
+    <script type="module" src="dist/index.js"></script>
+  </body>
+</html>
